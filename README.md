@@ -41,7 +41,7 @@ You must have **Node.js** and **npm** installed on your machine.
 Clone the repository and install the necessary dependencies:
 
 ```bash
-git clone [https://github.com/arminayaz/movie-find.git](https://github.com/arminayaz/movie-find.git)
+git clone https://github.com/arminayaz/movie-find.git
 cd movie-find
 npm install
 npm run dev
@@ -85,6 +85,6 @@ This project was created with the help of AI coding assistants (Gemini, ChatGPT,
 
 This project is intended for educational and portfolio purposes only.
 
-- License: The license is published with explicit permission from the original author, Shubham Sarda. Redistribution, modification, or reuse by others needs the author's consent.
+- **License:** The license is published with explicit permission from the original author, Shubham Sarda. Redistribution, modification, or reuse by others needs the author's consent.
 
-- Disclaimer: This project is inspired by the design aesthetic of the IMDB website but is not affiliated with or endorsed by Amazon company.
+- **Disclaimer:** This project is inspired by the design aesthetic of the IMDB website but is not affiliated with or endorsed by Amazon company.
