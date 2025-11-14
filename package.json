@@ -1,42 +1,49 @@
 {
-  "name": "cinemate",
+  "name": "movie-find",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+  "description": "Enhanced version of Cinemate app with additional features",
+  "author": "Armin Ayaz",
+  "contributors": [
+    {
+      "name": "Shubham Sarda",
+      "url": "https://github.com/ShubhamSarda",
+      "comment": "Original creator of the base project"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShubhamSarda/cinemate"
   },
+  "license": "Custom (used with permission)",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "NEXT_DISABLE_TURBOPACK=1 next dev",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.9.0",
+    "@svgr/webpack": "^8.1.0",
+    "keen-slider": "^6.8.6",
+    "next": "15.5.3",
+    "next-themes": "^0.4.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-loading-skeleton": "^3.5.0",
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
-    "tailwindcss": "^3.1.8"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

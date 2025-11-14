@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Movie Find App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Movie Find App Screenshot](public/stuff/img/screenshot.png)
 
-## Available Scripts
+### **Live Demo:** [See It in Action](movie-find-application.netlify.app/)
 
-In the project directory, you can run:
+An **enhanced** and **modernized** web application for discovering and exploring movie information.
 
-### `npm start`
+This project is a complete rewrite and upgrade of the original **[Cinemate](https://github.com/ShubhamSarda/cinemate/)** application created by **[Shubham Sarda](https://github.com/ShubhamSarda)**. It migrates the original codebase to a more performant and maintainable modern stack.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Enhancements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Next.js Migration:** Full migration from **React.js** to the **Next.js** framework for better performance, built-in routing, and improved SEO capabilities.
+- **Type Safety:** Adoption of **TypeScript** across the entire codebase for enhanced type safety, maintainability, and fewer runtime errors.
+- **Improved UI/UX:** A cleaner, more intuitive, and fully **responsive design** that provides a great experience on all devices.
+- **Cleaner Architecture:** Better folder structure, modular components, and a cleaner architecture for easier understanding and future contributions.
+- **State Management:** Implementation of **Redux Toolkit** for predictable and scalable global state management.
+- **Performance:** Faster page rendering and improved loading times due to Next.js features and code optimization.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application is built using the following modern technologies:
 
-### `npm run build`
+| Technology |
+| :--- |
+| **Next.js** |
+| **TypeScript** |
+| **Tailwind CSS** |
+| **TMDB API** |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these instructions to set up the project locally.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+You must have **Node.js** and **npm** installed on your machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Installation:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the repository and install the necessary dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone [https://github.com/arminayaz/movie-find.git](https://github.com/arminayaz/movie-find.git)
+cd movie-find
+npm install
+npm run dev
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. Environment Variables:
+The app requires an API key from [TMDB](https://www.themoviedb.org/) to fetch movie data.
 
-## Learn More
+- 1. Copy the example environment file:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cp .env.example .env.local
+```
+- 2. Open .env.local and fill in your TMDB API key:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+TMDB_API_KEY = YOUR_TMDB_API_KEY_HERE
+```
 
-### Code Splitting
+- 3. Running the Development Server
+To start the app in development mode:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run dev
+```
 
-### Analyzing the Bundle Size
+### Building for Production:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To create an optimized production build:
 
-### Making a Progressive Web App
+```
+npm run build
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+This project was created with the help of AI coding assistants (Gemini, ChatGPT, and Claude) for guidance and code improvement.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License & Disclaimer
 
-### Deployment
+This project is intended for educational and portfolio purposes only.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- License: The license is published with explicit permission from the original author, Shubham Sarda. Redistribution, modification, or reuse by others needs the author's consent.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Disclaimer: This project is inspired by the design aesthetic of the IMDB website but is not affiliated with or endorsed by Amazon company.

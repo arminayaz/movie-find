@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+@variant landscape (@media (orientation: landscape));
+@variant portrait (@media (orientation: portrait));
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    --skeleton-base: #e2e8f0;
+    --skeleton-highlight: #f8fafc;
+}
+
+.dark {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --skeleton-base: #2d3748;
+    --skeleton-highlight: #4a5568;
+}
+
+@theme {
+    --breakpoint-2xs: 10rem;
+    --breakpoint-2xl: 100rem;
+    --breakpoint-3xl: 120rem;
+    --container-2xs: 180px;
+    --animate-fade-in: fade-in 350ms ease-in-out forwards;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+}
+
+* {font-family: var(--font-noto-sans);}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: auto;
+    padding: calc(var(--spacing) * 5);
+}
+
+/* Keen Slider */
+[class^="number-slide"], [class*=" number-slide"] {
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+    height: 200px;
+    max-height: 100vh;
+}
+.number-slide1, .number-slide2 {background-color: transparent;}
+
+.thumbnail .keen-slider__slide {font-size: 30px; margin-top: 10px; height: 220px;}
+.thumbnail .keen-slider__slide {cursor: pointer;}
+.thumbnail .keen-slider__slide.active {border: 2px dashed rgb(179, 179, 179);}
+
+/* Loading Animation */
+@keyframes fade-in {0% {opacity: 0;} 100% {opacity: 1;}}
