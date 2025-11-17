@@ -49,7 +49,7 @@ export const MovieCardClient = ({movie, thresholdConfig = 0.5, variant = 'defaul
         <div ref={ref} className={`flex flex-col items-stretch ${isWatchlist ? 'lg:w-[240px] xl:w-[185px] xl:h-[full] lg:h-[490px]' : 'w-full h-[975px] md:h-[1050px] min-w-2xs'} bg-white border border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700`}>
             {contentLoaded && isDelayCompelete ? 
                 (<>
-                    <Link className='flex-1 aspect-[3/2]' href={`/movie/${id}`}>
+                    <Link className='flex-1 aspect-[2/3] md:h-[590px]' href={`/movie/${id}`}>
                         <img className={`rounded-t-xl w-full ${isWatchlist ? 'xl:h-[full] lg:h-[290px]' : 'md:h-[590px]'} object-cover`} src={image_url} alt={original_title} />
                     </Link>
                     <div className='flex flex-col flex-1 gap-[20px] items-center justify-center h-full p-5'>

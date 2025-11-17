@@ -2,7 +2,7 @@
 
 ![Movie Find App Screenshot](public/stuff/img/screenshot.png)
 
-### **Live Demo:** [See It in Action](movie-find-application.netlify.app/)
+### **Live Demo:** [See It in Action](https://movie-find-application.netlify.app/)
 
 An **enhanced** and **modernized** web application for discovering and exploring movie information.
 

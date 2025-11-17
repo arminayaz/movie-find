@@ -103,7 +103,7 @@ export function HeaderClient({navLinks, pathname: _serverPathname, activeClass, 
                 </div>
                 <button onClick={() => setHidden(!hidden)} data-collapse-toggle='navbar-menu' type='button' className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-xl lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600' aria-controls='navbar-search' aria-expanded='false'>
                     <span className='sr-only'>Open Main Menu</span>
-                    <Icons name='burger' className='w-5 h-5 flex items-center justify-center'/>
+                    <Icons name='burger' className='w-5 h-5 flex flex-col items-center justify-center'/>
                 </button>
             </div>
             <div className={`items-center justify-between ${hidden ? 'hidden' : ''} w-full lg:flex lg:w-auto lg:order-1`} id='navbar-search'>
